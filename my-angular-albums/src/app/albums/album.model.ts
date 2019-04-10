@@ -10,5 +10,13 @@ export interface Album {
   release_date: string;
   recording_location: string;
   duration: string;
-  URL: string;
+  url: string;
+  tracks: Track[];
+}
+
+export interface Track {
+  id: number;
+  track_number: number;
+  title: string;
+  length: string;
 }
